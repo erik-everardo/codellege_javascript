@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Distancia recorrida</h1>
+                <p>Se desea calcular la distancia recorrida (m) por un móvil que tiene velocidad constante (m/s) durante un tiempo T (Sg), considerar que es un movimiento rectilíneo uniforme.</p>
+                <div class="form-group">
+                    <label for="velocidad">Velocidad en m/s</label>
+                    <input type="number" class="form-control m-2" id="velocidad" placeholder="Ejemplo: 20">
+                    <label for="tiempo">Tiempo en segundos</label>
+                    <input type="number" class="form-control m-2" id="tiempo" placeholder="Ejemplo: 10">
+                    <div class="m-2 p-2">
+                        <span id="respuesta"></span>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="calcular">Calcular distancia recorrida</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/index.js"></script>
+</body>
+</html>
