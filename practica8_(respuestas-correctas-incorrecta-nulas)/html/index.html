@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <p>Se necesita un programa que solicite el numero de respuestas correctas, incorrectas y en
+                        blanco, correspondientes a postulantes, y muestre su puntaje final considerado, que por cada
+                        respuesta correcta tendrá 4 puntos, respuestas incorrectas tendrá -1 y respuestas en blanco
+                        tendrá 0.</p>
+                </header>
+                <section>
+                    <div class="form-group">
+                        <label for="respuestas-correctas">Respuestas correctas</label>
+                        <input type="number" class="form-control" id="respuestas-correctas">
+                        <label for="respuestas-incorrectas">Respuestas incorrectas</label>
+                        <input type="number" class="form-control" id="respuestas-incorrectas">
+                        <label for="respuestas-en-blanco">Respuestas en blanco</label>
+                        <input type="number" class="form-control" id="respuestas-en-blanco">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span id="calificacion" class="m-2"></span>
+                        <button class="btn btn-primary mt-2" id="boton-calcular">Calcular calificación</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./../js/index.js"></script>
+</body>
+
+</html>
