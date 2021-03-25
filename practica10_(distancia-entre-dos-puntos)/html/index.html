@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Distancia entre A y B</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <p>Se tiene los puntos A y B en el cuadrante positivo del plano cartesiano, elabore el algoritmo
+                        que permite obtener la distancia entre A y B.</p>
+                </header>
+                <section>
+                    <div class="form-group">
+                        <p>Ingresar las coordenadas con esta forma y en positivos: x,y. Ejemplo: 10,14</p>
+                        <label for="coordenada-a">Punto A (x,y)</label>
+                        <input type="text" class="form-control" id="coordenada-a">
+                        <label for="coordenada-b">Punto B (x,y)</label>
+                        <input type="text" class="form-control" id="coordenada-b">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span id="distancia" class="m-2"></span>
+                        <button class="btn btn-primary mt-2" id="boton-calcular">Distancia entre A y B</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./../js/index.js"></script>
+</body>
+
+</html>
