@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <p>Una empresa desea determinar el monto de un cheque que debe proporcionar a uno de sus empleados
+                        que tendrá que ir por equis número de días a la ciudad de Monterrey; los gastos que cubre la
+                        empresa son: hotel, comida y 100.00 pesos diarios para otros gastos. El monto debe estar
+                        desglosado para cada concepto.</p>
+                </header>
+                <div class="d-flex justify-content-center">
+                    <input type="number" class="form-control" placeholder="Monto diario para hotel" id="monto-hotel"> 
+                    <input type="number" class="form-control" placeholder="Monto diario para comida" id="monto-comida"> 
+                    <input type="number" class="form-control" placeholder="Días" id="num-dias"> 
+                </div>
+                <div class="d-flex">
+                    <table class="table mt-2">
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Monto diario</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hotel</td>
+                                <td id="precio-hotel"></td>
+                                <td id="total-hotel"></td>
+                            </tr>
+                            <tr>
+                                <td>Comida</td>
+                                <td id="precio-comida"></td>
+                                <td id="total-comida"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Gastos varios</td>
+                                <td>$100</td>
+                                <td id="total-varios"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="descripcion-total" class="text-end"></td>
+                                <td id="total"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-end mt-1">
+
+                    <button class="btn btn-primary" id="calcular">Calcular monto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../js/index.js"></script>
+</body>
+
+</html>
