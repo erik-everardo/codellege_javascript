@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Area de un triangulo cualquiera dados sus lados y semiperimetro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <p>Elabore un algoritmo que lea los 3 lados de un triangulo cualquiera y calcule su área,
+                        considerar: Si A, B y C son los lados y S el semiperimetro.</p>
+                </header>
+                <section>
+                    <div class="form-group">
+                        <label for="lado-a">Lado a</label>
+                        <input type="number" class="form-control" id="lado-a">
+                        <label for="lado-b">Lado b</label>
+                        <input type="number" class="form-control" id="lado-b">
+                        <label for="lado-c">Lado c</label>
+                        <input type="number" class="form-control" id="lado-c">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span id="area" class="m-2"></span>
+                        <button class="btn btn-primary mt-2" id="boton-calcular">Calcular área</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./../js/index.js"></script>
+</body>
+
+</html>
