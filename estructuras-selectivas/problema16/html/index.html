@@ -1,0 +1,72 @@
+<!--
+    16.	Una compañía de seguros para autos ofrece dos tipos de póliza: cobertura amplia (A) y daños a terceros (B).
+     Para el plan A, la cuota base es de $1,200, y para el B, de $950.00. A ambos planes se les carga el 10% del 
+     costo si la persona conduce tiene por habito beber alcohol, 5% si utiliza lentes, 5% si padece alguna 
+     enfermedad (deficiencia cardiaca o diabetes), y si más de 40 años se le carga el 20% de lo contrario solo 10%.
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tipos de poliza</h1>
+        <div class="form-group">
+            <div class="form-group">
+                <label for="tipo">Tipo de seguro</label>
+                <select id="tipo" class="form-control">
+                    <option value="A">Cobertura amplia</option>
+                    <option value="B">Daños a terceros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" class="form-control">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="alcohol">
+                <label class="form-check-label" for="alcohol">
+                    Usted bebe alcohol
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="lentes">
+                <label class="form-check-label" for="lentes">
+                    Usted utiliza lentes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="enfermedad">
+                <label class="form-check-label" for="enfermedad">
+                    Padece alguna enfermedad
+                </label>
+            </div>
+            <button type="button" id="boton" class="btn btn-primary">Calcular precio</button>
+            <div id="respuesta" class="mt-2"></div>
+        </div>
+    </div>
+    <script src="./../js/index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
