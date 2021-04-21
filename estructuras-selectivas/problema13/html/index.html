@@ -1,0 +1,65 @@
+<!--
+    13.	La asociación de vinicultores tiene como política fijar un precio inicial al kilo uva, la cual se 
+    clasifica en tipos A y B, y además en tamaños 1 y 2. Cuando se realiza la venta del producto, esta es 
+    de un solo tipo y tamaño, se requiere determinar cuánto recibirá un productor por la uva que entrega 
+    un embarque, considerando lo siguiente:
+        Si es tipo A, se le cargan 20c al precio inicial cuando es de tamaño 1; y 30c cuando es de tamaño 2.
+        Si es tipo B, se rebajan 30c cuando es de tamaño 1, y 50c cuando es de tamaño 2  
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <p>Calculemos el precio del kilo de uva</p>
+        <div class="form-group">
+            <label for="precioInicial">Precio inicial</label>
+            <input type="number" id="precioInicial" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo de uva</label>
+            <select id="tipo" class="form-control">
+                <option value="A">Tipo A</option>
+                <option value="B">Tipo B</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tamano">Tamaño de uva</label>
+            <select id="tamano" class="form-control">
+                <option value="1">Tamaño 1</option>
+                <option value="2">Tamaño 2</option>
+            </select>
+        </div>
+        <button type="button" id="calcular" class="btn btn-primary">
+            Calcular el precio del kilo
+        </button>
+        <div id="respuesta"></div>
+    </div>
+
+    <script src="./../js/index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
