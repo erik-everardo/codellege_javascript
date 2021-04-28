@@ -1,0 +1,15 @@
+#suma {
+    margin-top: 10px;
+}
+
+table {
+    margin-top: 10px;
+}
+
+td, th {
+    padding: 4px;
+}
+table, td, tr, th {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
